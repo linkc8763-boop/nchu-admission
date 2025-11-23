@@ -1,0 +1,156 @@
+
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>報考相關資訊</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img class="logo" src="assets/NCHU_Badge.png" alt="NCHU Logo">
+      <div class="title">國立中興大學<br/>招生資訊系統</div>
+    </div>
+    <button class="hamburger" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <div class="menu-overlay"></div>
+  <div class="menu" role="dialog" aria-modal="true">
+    <button class="close" aria-label="close">×</button>
+    <button class="logout-btn">登出</button>
+  </div>
+
+  <div class="container">
+    <div class="card" style="background:#8fd1c9;">
+      <div style="display:flex; gap:12px; font-weight:900; font-size:18px;">
+        <div>👤 考生姓名：<span id="portalName">-</span></div>
+        <div style="margin-left:auto;">🧩 報考別：碩士班甄試</div>
+      </div>
+    </div>
+
+    <div class="card time-box">
+      <h3>重要時間</h3>
+      <div class="time-grid" style="margin-top:6px;">
+        <div class="time-cell"><div class="num">00</div><div class="lbl">Days</div></div>
+        <div class="time-cell"><div class="num">00</div><div class="lbl">Hours</div></div>
+        <div class="time-cell"><div class="num">00</div><div class="lbl">Minutes</div></div>
+        <div class="time-cell"><div class="num">00</div><div class="lbl">Seconds</div></div>
+      </div>
+      <div style="margin-top:10px; font-weight:800;">
+        2025/10/13 17:00前－可進行個人資料異動或審查資料上傳
+      </div>
+    </div>
+
+    <div class="card time-box" style="background:var(--pink);">
+      <h3>繳費截止時間</h3>
+      <div class="grid-2" style="grid-template-columns:1fr 1fr; margin-top:6px;">
+        <div class="time-cell"><div class="num">00</div><div class="lbl">Days</div></div>
+        <div class="time-cell"><div class="num">00</div><div class="lbl">Hours</div></div>
+      </div>
+      <div style="margin-top:10px; font-weight:900;">
+        2025/10/13 23:59前完成繳費
+      </div>
+    </div>
+
+    <div class="card table-card">
+      <div class="section-title" style="text-align:center;">
+        報考 電機工程學系乙組 相關資訊
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>列印准考證</th>
+            <th>成績查詢</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>114年10月17日～<br/>114年11月18日</td>
+            <td>114年11月07日(放榜梯次1)～<br/>114年11月25日(放榜梯次2)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <div class="section-title">報名資料修改</div>
+      <div style="color:var(--muted); line-height:1.6;">
+        可於報名期間修改報考 電機工程學系乙組學系的：
+        1.身分別 2.志願序 3.選考科目(如該系有相關規則)
+      </div>
+      <button class="big-btn" disabled style="opacity:.65;">非報名期間，不可異動</button>
+    </div>
+
+    <div class="card">
+      <div class="section-title">審查資料(含推薦函)</div>
+      <div style="color:var(--muted); line-height:1.6;">
+        請於報名結束(2025/10/13(星期一) 17:00)前進行審查資料檢視及上傳。
+        可重複上傳，系統以最後一次為準。
+      </div>
+      <button class="big-btn">查詢＆維護</button>
+    </div>
+
+    <div class="card">
+      <div class="section-title">學經歷彙整表</div>
+      <div style="color:var(--muted); line-height:1.6;">
+        請於報名結束(2025/10/13(星期一) 17:00)前進行學經歷彙整表填寫。
+        報名時間內可進行修改。
+      </div>
+      <button class="big-btn">查詢＆維護</button>
+    </div>
+
+    <div class="card">
+      <div class="section-title">繳費單 <span style="float:right;color:#b10b32;">$1500</span></div>
+      <div style="color:var(--muted); line-height:1.6;">
+        請於2025/10/13(星期一) 17:00前自行列印，
+        於2025/10/13(星期一) 23:59前完成繳費。
+      </div>
+      <button class="big-btn" disabled style="opacity:.65;">已完成繳費</button>
+    </div>
+
+    <div class="card">
+      <div class="section-title">准考證 <span style="float:right;color:#1b7e73;">(已繳費)</span></div>
+      <div style="color:var(--muted); line-height:1.6;">
+        如果完成繳費，可於2025/10/17(星期五)～
+        2025/11/18(星期二)自行列印。
+      </div>
+      <button class="big-btn" disabled style="opacity:.65;">非列印時間</button>
+    </div>
+
+    <div class="card">
+      <div class="section-title">成績單(放榜梯次:2)</div>
+      <div style="color:var(--muted); line-height:1.6;">
+        2025/11/07(星期五)起考生可自行列印成績單，
+        惟第二梯次放榜系所考生於2025/11/25(星期二)後方可列印完整成績單。
+      </div>
+      <a class="big-btn" href="result.html">列印</a>
+    </div>
+
+    <div class="card">
+      <div class="section-title">報到登記</div>
+      <div style="color:var(--muted); line-height:1.6;">
+        有意願就讀之正取生及備取生，皆應於
+        2025/11/28(星期五)～2025/12/04(星期四)完成程序
+        (點選下方按鈕即可登記)。
+      </div>
+      <button class="big-btn">報到或意願登記</button>
+    </div>
+
+    <div class="card">
+      <div class="section-title">車號調查</div>
+      <div style="color:var(--muted); line-height:1.6;">
+        因系所規則需到校面試，如果會自行開車入校，
+        請於2025/11/11(星期二) 17:00前進行維護，
+        有維護完成可於面試當天車牌辨識入校。
+      </div>
+      <button class="big-btn">查詢＆維護</button>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

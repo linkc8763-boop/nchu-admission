@@ -1,0 +1,71 @@
+
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>甄試成績查詢結果</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img class="logo" src="assets/NCHU_Badge.png" alt="NCHU Logo">
+      <div class="title">國立中興大學<br/>招生資訊系統</div>
+    </div>
+    <button class="hamburger" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <div class="menu-overlay"></div>
+  <div class="menu" role="dialog" aria-modal="true">
+    <button class="close" aria-label="close">×</button>
+    <button class="logout-btn">登出</button>
+  </div>
+
+  <div class="container" id="resultPage">
+    <div class="card">
+      <div class="result-header">甄試成績查詢結果</div>
+
+      <div class="result-row">
+        <div>准考證號碼</div>
+        <div data-field="examNo">-</div>
+      </div>
+      <div class="result-row">
+        <div>姓名</div>
+        <div data-field="name">-</div>
+      </div>
+      <div class="result-row">
+        <div>系所名稱</div>
+        <div data-field="dept">-</div>
+      </div>
+
+      <hr style="border:none;border-top:2px dashed #c9c9c9;margin:12px 0;">
+
+      <div class="score-box">
+        <div class="label">審查分數</div>
+        <div class="value" data-field="docScore">-</div>
+      </div>
+      <div class="score-box">
+        <div class="label">面試分數</div>
+        <div class="value" data-field="interviewScore">-</div>
+      </div>
+      <div class="score-box">
+        <div class="label">最終成績</div>
+        <div class="value" data-field="finalScore">-</div>
+      </div>
+
+      <div class="result-row" style="align-items:center; margin-top:6px;">
+        <div style="font-size:20px;font-weight:900;">錄取結果</div>
+        <div class="badge" data-field="result">-</div>
+      </div>
+
+      <a class="big-btn" href="score_report.pdf" target="_blank">列印成績單（PDF）</a>
+      <a class="big-btn" href="department_lists.pdf" target="_blank">各系榜單（PDF）</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
