@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>碩士班甄試招生資訊系統</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="login-body">
+  <div class="login-card">
+    <div class="login-header">
+      <img class="login-logo" src="assets/NCHU_Badge.png" alt="NCHU logo">
+      <h1>碩士班甄試招生資訊<br/>系統</h1>
+    </div>
+
+    <label class="field-label">帳號：</label>
+    <input id="idInput" class="text-input" placeholder="身分證字號或居留證號" autocomplete="username" />
+
+    <label class="field-label">密碼：</label>
+    <input id="pwInput" type="password" class="text-input" placeholder="預設密碼為出生月日" autocomplete="current-password" />
+
+    <p class="hint">
+      預設密碼為：出生月份＋日期(如1月31日為0131)<br/>
+      瀏覽器建議使用 Chrome、Edge 或 FireFox。
+    </p>
+
+    <button id="loginBtn" class="primary-btn">登入 / Sign in</button>
+
+    <div class="or">- OR -</div>
+    <button id="forgotBtn" class="ghost-btn">忘記密碼</button>
+
+    <div id="loginMsg" class="login-msg" aria-live="polite"></div>
+
+    <p class="login-footer red">
+      尚未首次報名者請於報名期間內按我進行首次報名
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
