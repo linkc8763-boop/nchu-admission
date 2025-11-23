@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>國立中興大學 招生資訊系統 - 考生專區</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="portal-body">
+  <header class="topbar">
+    <div class="topbar-left">
+      <div class="tri-logo">NCHU</div>
+      <div class="top-title">國立中興大學 招生資訊系統</div>
+    </div>
+    <button class="hamburger" aria-label="menu" onclick="toggleMenu()">☰</button>
+  </header>
+
+  <nav id="menu" class="menu hidden">
+    <a href="#profile">考生個人資料</a>
+    <a href="#important">重要時間</a>
+    <a href="#sections">報考資訊</a>
+    <a href="result.html">成績單</a>
+    <a href="#" onclick="logout()">登出</a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-item">
+      <div class="hero-icon">👤</div>
+      <div class="hero-text">考生姓名：許詠鈞</div>
+    </div>
+    <div class="hero-item">
+      <div class="hero-icon">🧩</div>
+      <div class="hero-text">報考別：碩士班甄試</div>
+    </div>
+  </section>
+
+  <section id="profile" class="section light">
+    <h2>考生個人資料</h2>
+    <p class="muted">請確認相關報名資料無誤，報名期間內可進行異動</p>
+
+    <div class="table-card">
+      <table class="info-table">
+        <tr>
+          <th>姓名</th><td>許詠鈞</td>
+          <th>性別</th><td>男</td>
+        </tr>
+        <tr>
+          <th>身分證字號/居留證號</th><td>B123424288</td>
+          <th>出生日期</th><td>2000/11/24</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="table-card">
+      <table class="contact-table">
+        <tr>
+          <th class="blue">連絡電話</th><td>04-22607507</td>
+          <th class="blue">行動電話</th><td>0909303173</td>
+        </tr>
+        <tr>
+          <th class="blue">電子郵件</th><td>linkc8763@gmail.com</td>
+          <th class="blue">中低收入/低收入</th><td>非低收、中低收入戶</td>
+        </tr>
+        <tr>
+          <th class="blue">通訊地址</th>
+          <td colspan="3">402臺中市南區忠明南路1142號4樓之2</td>
+        </tr>
+        <tr>
+          <th class="blue">戶籍地址</th>
+          <td colspan="3">402臺中市南區忠明南路1142號4樓之2</td>
+        </tr>
+        <tr>
+          <th class="blue">緊急連絡人姓名</th><td>許盟志</td>
+          <th class="blue">緊急連絡人關係</th><td>父子</td>
+        </tr>
+        <tr>
+          <th class="blue">緊急連絡人聯絡電話</th><td>04-22607507</td>
+          <th class="blue">緊急連絡人行動電話</th><td>0909303173</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+  <section id="important" class="section dark">
+    <h2>重要時間</h2>
+
+    <div class="countdown-grid">
+      <div class="count-card grad-a">
+        <div class="count-title">報名截止時間</div>
+        <div class="count-num" id="regDays">00</div><div class="count-label">Days</div>
+        <div class="count-num" id="regHours">00</div><div class="count-label">Hours</div>
+        <div class="count-num" id="regMins">00</div><div class="count-label">Minutes</div>
+        <div class="count-num" id="regSecs">00</div><div class="count-label">Seconds</div>
+      </div>
+
+      <div class="count-card grad-b">
+        <div class="count-title">繳費截止時間</div>
+        <div class="count-num" id="payDays">00</div><div class="count-label">Days</div>
+        <div class="count-num" id="payHours">00</div><div class="count-label">Hours</div>
+        <div class="count-num" id="payMins">00</div><div class="count-label">Minutes</div>
+        <div class="count-num" id="paySecs">00</div><div class="count-label">Seconds</div>
+        <div class="small-note">2025/10/13 23:59前完成繳費</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sections" class="section light">
+    <h2>報考 電機工程學系乙組 相關表單</h2>
+
+    <div class="block">
+      <h3>報名資料修改</h3>
+      <p class="muted">可於報名期間修改報考 電機工程學系乙組學系的：1.身分別 2.志願序 3.選考科目(如該系有相關規則)</p>
+      <button class="btn-pill disabled" type="button">非報名期間，不可異動</button>
+    </div>
+
+    <div class="block">
+      <div class="block-row">
+        <h3>審查資料 (含推薦函)</h3>
+        <div class="status red">狀態：0/4</div>
+      </div>
+      <p class="muted">請於報名結束(2025/10/13(星期一) 17:00)前進行審查資料檢視及上傳。可重複上傳，系統以最後一次為準。</p>
+      <button class="btn-pill" type="button" onclick="alert('示意網站：此按鈕不會實際上傳')">查詢&維護</button>
+    </div>
+
+    <div class="block">
+      <div class="block-row">
+        <h3>學經歷彙整表</h3>
+        <div class="status red">未填寫</div>
+      </div>
+      <p class="muted">請於報名結束(2025/10/13(星期一) 17:00)前進行學經歷彙整表填寫。報名時間內可進行修改。</p>
+      <button class="btn-pill" type="button" onclick="alert('示意網站：此按鈕不會實際填寫')">查詢&維護</button>
+    </div>
+
+    <div class="block">
+      <div class="block-row">
+        <h3>繳費單</h3>
+        <div class="status red">($1500)</div>
+      </div>
+      <p class="muted">請於2025/10/13(星期一) 17:00前自行列印，於2025/10/13(星期一) 23:59前完成繳費。</p>
+      <button class="btn-pill disabled" type="button">已完成繳費</button>
+    </div>
+
+    <div class="block">
+      <div class="block-row">
+        <h3>准考證</h3>
+        <div class="status blue">已繳費</div>
+      </div>
+      <p class="muted">如果完成繳費，可於2025/10/17(星期五) ~ 2025/11/18(星期二)自行列印。</p>
+      <button class="btn-pill disabled" type="button">非列印時間</button>
+    </div>
+
+    <div class="block">
+      <div class="block-row">
+        <h3>成績單 (放榜梯次:2)</h3>
+      </div>
+      <p class="muted">2025/11/07(星期五)起考生可自行列印成績單，惟第二梯次放榜系所考生於2025/11/25(星期二)後方可列印完整成績單。</p>
+      <a class="btn-pill" href="result.html">列印</a>
+    </div>
+
+    <div class="block">
+      <h3>報到登記</h3>
+      <p class="muted">有意願就讀之正取生及備取生，皆應於2025/11/28(星期五) ~ 2025/12/04(星期四)完成程序(點選下方按鈕即可登記)。</p>
+      <button class="btn-pill" type="button" onclick="alert('示意網站：未提供實際登記')">報到或意願登記</button>
+    </div>
+
+    <div class="block">
+      <h3>車號調查</h3>
+      <p class="muted">因系所規則需到校面試，如果會自行開車入校，請於2025/11/11(星期二) 17:00前進行維護，有維護完成可於面試當天車牌辨識入校。</p>
+      <button class="btn-pill" type="button" onclick="alert('示意網站：未提供實際維護')">查詢&維護</button>
+    </div>
+
+    <div class="block subtle">
+      <button class="btn-pill ghost" type="button" disabled>＋ 新增報考系所</button>
+      <div class="muted center">非報名期間，無法新增報考系所</div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    國立中興大學 招生資訊系統（示意）
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
