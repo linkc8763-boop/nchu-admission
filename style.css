@@ -1,0 +1,21 @@
+
+/* === 修正登入頁面 LOGO，移除外部圓框 === */
+
+.logo {
+    width: 100px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+    border-radius: 0; /* 移除圓框 */
+    box-shadow: none; /* 移除陰影 */
+    object-fit: contain;
+}
+
+/* 如需完整CSS，我可以再為你重建所有樣式 */
