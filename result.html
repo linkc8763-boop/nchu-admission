@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>碩士班甄試招生資訊系統 - 成績</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body class="bg">
+  <header class="topbar">
+    <div class="topbar-left">
+      <img class="topbar-logo" src="./assets/NCHU_Badge.png" alt="NCHU Logo" />
+      <div class="topbar-title">國立中興大學 招生資訊系統</div>
+    </div>
+    <button class="hamburger" aria-label="menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <nav id="menu" class="menu hidden">
+    <a href="./portal.html" class="menu-item">首頁</a>
+    <a href="./result.html" class="menu-item active">成績與結果</a>
+    <a href="./index.html" class="menu-item">登出</a>
+  </nav>
+
+  <main class="container">
+    <section class="section-title">成績與錄取結果</section>
+
+    <section class="card result-card">
+      <div class="result-row"><div class="result-label">姓名</div><div id="rName" class="result-value">—</div></div>
+      <div class="result-row"><div class="result-label">身分證字號</div><div id="rId" class="result-value">—</div></div>
+      <div class="result-row"><div class="result-label">准考證號碼</div><div id="rExamNo" class="result-value">—</div></div>
+      <div class="result-row"><div class="result-label">系所名稱</div><div id="rDept" class="result-value">—</div></div>
+      <hr class="divider" />
+      <div class="result-row"><div class="result-label">審查分數</div><div id="rReview" class="result-value">—</div></div>
+      <div class="result-row"><div class="result-label">面試分數</div><div id="rInterview" class="result-value">—</div></div>
+      <div class="result-row"><div class="result-label">最終成績</div><div id="rFinal" class="result-value big">—</div></div>
+      <div class="result-row"><div class="result-label">錄取結果</div><div id="rStatus" class="result-value status">—</div></div>
+    </section>
+
+    <section class="card download-card">
+      <h2>下載</h2>
+      <div class="download-actions">
+        <a class="btn primary" href="./score_report.pdf" target="_blank" rel="noopener">成績單 PDF</a>
+        <a class="btn ghost" href="./demo.pdf" target="_blank" rel="noopener">範例 PDF</a>
+      </div>
+      <p class="hint small">若 PDF 尚未提供，按鈕會開啟空白檔案；之後你傳圖片我再幫你加上去。</p>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>

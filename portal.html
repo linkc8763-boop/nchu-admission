@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>碩士班甄試招生資訊系統 - 入口</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body class="bg">
+  <header class="topbar">
+    <div class="topbar-left">
+      <img class="topbar-logo" src="./assets/NCHU_Badge.png" alt="NCHU Logo" />
+      <div class="topbar-title">國立中興大學 招生資訊系統</div>
+    </div>
+    <button class="hamburger" aria-label="menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <nav id="menu" class="menu hidden">
+    <a href="./portal.html" class="menu-item active">首頁</a>
+    <a href="./result.html" class="menu-item">成績與結果</a>
+    <a href="./index.html" class="menu-item">登出</a>
+  </nav>
+
+  <main class="container">
+    <section class="profile-strip">
+      <div class="profile-row">
+        <div class="profile-icon user"></div>
+        <div class="profile-text">
+          <div class="profile-label">考生姓名：</div>
+          <div id="studentName" class="profile-value">—</div>
+        </div>
+      </div>
+      <div class="profile-row">
+        <div class="profile-icon exam"></div>
+        <div class="profile-text">
+          <div class="profile-label">報考別：</div>
+          <div id="examType" class="profile-value">碩士班甄試</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-title">重要時間</section>
+
+    <section class="card timer-card teal">
+      <h2>報名截止時間</h2>
+      <div class="timer-grid">
+        <div class="timer-box"><div id="d1" class="timer-num">00</div><div class="timer-unit">Days</div></div>
+        <div class="timer-box"><div id="h1" class="timer-num">00</div><div class="timer-unit">Hours</div></div>
+        <div class="timer-box"><div id="m1" class="timer-num">00</div><div class="timer-unit">Minutes</div></div>
+        <div class="timer-box"><div id="s1" class="timer-num">00</div><div class="timer-unit">Seconds</div></div>
+      </div>
+      <p class="timer-hint">2025/10/13 17:00前－可進行個人資料異動或審查資料上傳</p>
+    </section>
+
+    <section class="card timer-card pink">
+      <h2>繳費截止時間</h2>
+      <div class="timer-grid two">
+        <div class="timer-box"><div id="d2" class="timer-num">00</div><div class="timer-unit">Days</div></div>
+        <div class="timer-box"><div id="h2" class="timer-num">00</div><div class="timer-unit">Hours</div></div>
+      </div>
+      <p class="timer-hint">2025/10/13 23:59前完成繳費</p>
+    </section>
+
+    <section class="card list-card">
+      <h2>報名資料修改</h2>
+      <p>可於報名期間修改報考系所：1.身分別 2.志願序 3.選考科目(如該系有相關規則)</p>
+      <button class="btn muted" type="button" disabled>非報名期間，不可異動</button>
+    </section>
+
+    <section class="card list-card">
+      <div class="card-head">
+        <h2>審查資料 (含推薦函)</h2>
+      </div>
+      <p>請於報名結束(2025/10/13(星期一) 17:00)前進行審查資料檢視及上傳。可重複上傳，系統以最後一次為準。</p>
+      <button class="btn primary" type="button" onclick="goUpload()">查詢＆維護</button>
+    </section>
+
+    <section class="card list-card">
+      <h2>學經歷彙整表</h2>
+      <p>請於報名結束(2025/10/13(星期一) 17:00)前進行學經歷彙整表填寫。報名時間內可進行修改。</p>
+      <button class="btn primary" type="button" onclick="goResume()">查詢＆維護</button>
+    </section>
+
+    <section class="card list-card">
+      <div class="card-head">
+        <h2>繳費單</h2>
+        <div class="badge red">( $1500 )</div>
+      </div>
+      <p>請於2025/10/13(星期一) 17:00前自行列印，於2025/10/13(星期一) 23:59前完成繳費。</p>
+      <button class="btn muted" type="button" disabled>已完成繳費</button>
+    </section>
+
+    <section class="card list-card">
+      <div class="card-head">
+        <h2>准考證</h2>
+        <div class="badge teal">( 已繳費 )</div>
+      </div>
+      <p>如果完成繳費，可於2025/10/17(星期五) ~ 2025/11/18(星期二)自行列印。</p>
+      <button class="btn muted" type="button" disabled>非列印時間</button>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
