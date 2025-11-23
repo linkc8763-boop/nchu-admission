@@ -1,42 +1,57 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>碩士班甄試招生資訊系統</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>碩士班甄試招生資訊系統</title>
+
+  <!-- ✅ 正確載入 CSS（最重要） -->
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body class="login-body">
+<body>
 
-    <div class="login-container">
+  <div class="login-page">
+    <div class="login-card">
 
-        <img src="assets/logo.png" alt="NCHU Logo" class="login-logo">
+      <!-- ✅ 校徽：沒有外框、直接顯示 -->
+      <!-- ⚠️ 如果你的資料夾名字不是 nchu-logo，改成你自己的資料夾 -->
+      <div class="login-logo">
+        <img src="assets/nchu_logo.png" alt="NCHU Logo" />
+      </div>
 
-        <h2 class="login-title">碩士班甄試招生資訊<br>系統</h2>
+      <h1 class="login-title">
+        碩士班甄試招生資訊<br/>系統
+      </h1>
 
-        <form id="loginForm">
-            <label for="id">帳號：</label>
-            <input type="text" id="id" placeholder="身分證字號或居留證號" required>
+      <div class="form-group">
+        <label for="account">帳號：</label>
+        <input id="account" type="text" placeholder="身分證字號或居留證號" />
+      </div>
 
-            <label for="password">密碼：</label>
-            <input type="password" id="password" placeholder="預設密碼為出生月日" required>
+      <div class="form-group">
+        <label for="password">密碼：</label>
+        <input id="password" type="password" placeholder="預設密碼為出生月日" />
+      </div>
 
-            <p class="hint">預設密碼為：出生月份＋日期(如1月31日為0131)<br>
-            瀏覽器建議使用 Chrome、Edge 或 Firefox。</p>
+      <p class="hint">
+        預設密碼為：出生月份＋日期(如1月31日為0131)<br/>
+        瀏覽器建議使用 Chrome、Edge 或 FireFox。
+      </p>
 
-            <button type="submit" class="login-btn">登入 / Sign in</button>
+      <button class="btn primary" id="loginBtn">登入 / Sign in</button>
 
-            <div class="or">- OR -</div>
+      <div class="or">- OR -</div>
 
-            <button type="button" class="forgot-btn">忘記密碼</button>
-        </form>
+      <button class="btn secondary">忘記密碼</button>
 
-        <p class="first-time">
-            尚未首次報名者請於報名期間內按我進行首次報名
-        </p>
+      <p class="notice">
+        尚未首次報名者請於報名期間內按我進行首次報名
+      </p>
 
     </div>
+  </div>
 
-    <script src="script.js"></script>
+  <!-- ✅ 正確載入 JS -->
+  <script src="script.js"></script>
 </body>
 </html>
