@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>成績查詢</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="result-body">
+  <header class="topbar">
+    <div class="topbar-left">
+      <img src="assets/NCHU_Badge.png" class="topbar-logo" alt="NCHU">
+      <span class="topbar-title">國立中興大學 招生資訊系統</span>
+    </div>
+    <a class="topbar-back" href="portal.html">返回</a>
+  </header>
+
+  <main class="result-main">
+    <div class="result-card">
+      <h1 class="result-title">114學年度 碩士班甄試 成績查詢</h1>
+      <div class="result-row"><span>身分證字號：</span><strong id="rId"></strong></div>
+      <div class="result-row"><span>准考證號碼：</span><strong id="rTicket"></strong></div>
+      <div class="result-row"><span>姓名：</span><strong id="rName"></strong></div>
+      <div class="divider"></div>
+      <div class="result-row"><span>系所名稱：</span><strong id="rDept"></strong></div>
+      <div class="result-row"><span>審查分數：</span><strong id="rReview"></strong></div>
+      <div class="result-row"><span>面試分數：</span><strong id="rInterview"></strong></div>
+      <div class="result-row"><span>最終成績：</span><strong id="rFinal"></strong></div>
+      <div class="result-row"><span>錄取結果：</span><strong id="rAdmit"></strong></div>
+
+      <div class="actions">
+        <a class="primary-btn small" href="score_report.pdf" download>下載成績單 PDF</a>
+        <a class="ghost-btn small" href="portal.html">回系統首頁</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
