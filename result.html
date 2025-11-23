@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+  <title>甄試成績查詢</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="bg-portal">
+  <header class="topbar topbar-portal">
+    <div class="brand">
+      <img class="brand-logo small" src="assets/NCHU_Badge.png" alt="NCHU Logo" onerror="this.style.opacity=.2"/>
+      <div class="brand-text">
+        <div class="brand-title">國立中興大學</div>
+        <div class="brand-sub">招生資訊系統</div>
+      </div>
+    </div>
+    <a class="menu-btn back" href="portal.html" aria-label="back">←</a>
+  </header>
+
+  <main class="container result">
+    <section class="card result-card">
+      <h1 class="result-title">甄試成績查詢結果</h1>
+
+      <div class="result-row">
+        <div class="result-label">准考證號碼</div>
+        <div class="result-value" id="ticketNo">A1863124</div>
+      </div>
+
+      <div class="result-row">
+        <div class="result-label">姓名</div>
+        <div class="result-value" id="resultName">許詠鈞</div>
+      </div>
+
+      <div class="result-row">
+        <div class="result-label">系所名稱</div>
+        <div class="result-value">電機工程學系乙組</div>
+      </div>
+
+      <hr class="divider"/>
+
+      <div class="score-grid">
+        <div class="score-item">
+          <div class="score-head">審查分數</div>
+          <div class="score-num">72.8</div>
+        </div>
+        <div class="score-item">
+          <div class="score-head">面試分數</div>
+          <div class="score-num">80</div>
+        </div>
+        <div class="score-item">
+          <div class="score-head">最終成績</div>
+          <div class="score-num big">76.4</div>
+        </div>
+      </div>
+
+      <div class="result-final">
+        <div class="final-label">錄取結果</div>
+        <div class="final-pill wait">備取 9</div>
+      </div>
+
+      <div class="btn-row">
+        <a class="btn btn-secondary wide" href="assets/score.pdf" target="_blank" rel="noopener">列印成績單(PDF)</a>
+        <a class="btn btn-ghost wide" href="assets/ranking.pdf" target="_blank" rel="noopener">各系榜單(PDF)</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
