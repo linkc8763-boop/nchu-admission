@@ -1,48 +1,32 @@
-
-<!doctype html>
-<html lang="zh-Hant">
+<!DOCTYPE html>
+<html lang="zh-TW">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>碩士班甄試招生資訊系統</title>
-  <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>碩士班甄試招生資訊系統</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <header>
-    <div class="brand">
-      <img class="logo" src="assets/NCHU_Badge.png" alt="NCHU Logo">
-      <div class="title">國立中興大學<br/>招生資訊系統</div>
+
+<!-- 套用登入背景 -->
+<body class="login-page">
+
+    <div class="login-container">
+        <h2 style="font-size:26px;font-weight:700;margin-bottom:20px;">
+            碩士班甄試招生資訊系統
+        </h2>
+
+        <form action="portal.html" method="GET">
+            <input type="text" name="id" placeholder="身分證字號或居留證號" required />
+            <input type="password" name="pw" placeholder="預設密碼為出生年月日" required />
+
+            <button type="submit" class="login-btn">登入 / Sign in</button>
+        </form>
+
+        <div class="forgot">忘記密碼</div>
+        <p style="margin-top:14px;color:#d22;font-weight:600;font-size:16px;">
+            尚未首次報名者請於報名期間內按我進行首次報名
+        </p>
     </div>
-  </header>
 
-  <div class="container">
-    <div class="login-wrap">
-      <div class="login-title">碩士班甄試招生資訊系統</div>
-
-      <form id="loginForm">
-        <label>帳號：</label>
-        <input id="idInput" placeholder="身分證字號或居留證號" autocomplete="username"/>
-
-        <label>密碼：</label>
-        <input id="pwdInput" placeholder="預設密碼為出生月日" type="password" autocomplete="current-password"/>
-
-        <div class="help">
-          預設密碼為：出生月份＋日期(如1月31日為0131)<br/>
-          瀏覽器建議使用 Chrome、Edge 或 FireFox。
-        </div>
-
-        <button class="big-btn" type="submit">登入 / Sign in</button>
-      </form>
-
-      <div class="or">- OR -</div>
-      <button class="forgot" type="button">忘記密碼</button>
-
-      <div class="help" style="margin-top:14px; text-align:center; font-weight:900; color:#b10b32;">
-        尚未首次報名者請於報名期間內按我進行首次報名
-      </div>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
