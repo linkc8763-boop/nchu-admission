@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>登記結果</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="header">
+    <img class="logo" src="./assets/NCHU_Badge.png" alt="NCHU Logo">
+    <div class="title">國立中興大學<br>招生資訊系統</div>
+    <div class="spacer"></div>
+    <button class="back-btn" onclick="history.back()" aria-label="back">←</button>
+  </header>
+
+  <main class="page">
+    <section class="card">
+      <div class="score-title">登記結果</div>
+
+      <div class="score-meta">
+        <div>准考證號碼</div><div class="val">A1863124</div>
+        <div>姓名</div><div class="val">許詠鈞</div>
+        <div>系所名稱</div><div class="val">電機工程學系乙組</div>
+      </div>
+
+      <hr style="border:none;border-top:2px dashed #d8d8d8;margin:8px 0 12px;">
+
+      <div class="score-box">
+        <div class="score-label">登記結果</div>
+        <div class="score-value">登記完成</div>
+      </div>
+
+      <div class="score-box">
+        <div class="score-label">錄取結果</div>
+        <div class="score-value">已錄取</div>
+      </div>
+
+      <a class="btn pdf" href="./assets/新生名單.pdf" target="_blank" download>新生名單 (PDF)</a>
+</section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
