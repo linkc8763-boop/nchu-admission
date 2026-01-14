@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>招生資訊系統 - 首頁</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="header">
+    <img class="logo" src="./assets/NCHU_Badge.png" alt="NCHU Logo">
+    <div class="title">國立中興大學<br>招生資訊系統</div>
+    <div class="spacer"></div>
+    <button class="hamburger" id="menuBtn" aria-label="menu">
+      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+    </button>
+  </header>
+
+  <div class="drawer" id="drawer">
+    <div class="drawer-panel">
+      <button class="drawer-close" id="drawerClose">✕</button>
+      <div style="font-size:22px;font-weight:900;text-align:center;margin-top:6px;">系統選單</div>
+      <button class="btn logout-btn" id="logoutBtn">登出系統</button>
+    </div>
+  </div>
+
+  <main class="page">
+    <section class="card">
+      <h2>考生資訊</h2>
+      <p>考生姓名：許詠鈞</p>
+      <p>報考別：碩士班甄試</p>
+    </section>
+
+    <section class="card">
+      <h2 style="text-align:center; font-size:24px;">重要時間</h2>
+      <div style="height:8px"></div>
+      <p><b>報名截止時間</b>：2025/10/13 17:00 前可進行個人資料異動或審查資料上傳</p>
+      <p><b>繳費截止時間</b>：2025/10/13 23:59 前完成繳費</p>
+    </section>
+
+    <section class="card">
+      <h2 style="text-align:center;">報考 電機工程學系乙組 相關資訊</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>列印准考證</th>
+            <th>成績查詢</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>114年10月17日～114年11月18日</td>
+            <td>114年11月07日(放榜梯次1)～114年11月25日(放榜梯次2)</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>繳費單 <span style="float:right;color:#b10b0b;">($1500)</span></h2>
+      <p>請於2025/10/13(星期一) 17:00前自行列印，於2025/10/13(星期一) 23:59前完成繳費。</p>
+      <button class="btn secondary" type="button">已完成繳費</button>
+    </section>
+
+    <section class="card">
+      <h2>准考證 <span style="float:right;color:#078a51;">(已繳費)</span></h2>
+      <p>如果完成繳費，可於2025/10/17(星期五)～2025/11/18(星期二)自行列印。</p>
+      <button class="btn secondary" type="button">非列印時間</button>
+    </section>
+
+    <section class="card">
+      <h2>成績單(放榜梯次:2)</h2>
+      <p>2025/11/07(星期五)起考生可自行列印成績單，惟第二梯次放榜系所考生於2025/11/25(星期二)後方可列印完整成績單。</p>
+      <button class="btn" id="goScore" type="button">列印</button>
+    </section>
+
+    <section class="card">
+      <h2>報到登記</h2>
+      <p>有意願就讀之正取生及備取生，皆應於2025/11/28(星期五)～2025/12/04(星期四)完成程序(點選下方按鈕即可登記)。</p>
+      <button class=\"btn btn-teal\" type=\"button\" onclick=\"location.href='register.html'\">報到或意願登記</button>
+    </section>
+
+    <section class="card">
+      <h2>車號調查</h2>
+      <p>因系所規則需到校面試，如果會自行開車入校，請於2025/11/11(星期二) 17:00前進行維護，有維護完成可於面試當天車牌辨識入校。</p>
+      <button class="btn" type="button">查詢&維護</button>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
